@@ -41,25 +41,21 @@ class _RegisterState extends State<Register> {
                   SizedBox(height: 7,),
                   CustomTextField(),
                   SizedBox(height: 12,),
-                  CustomTextWidget("Email", style: CustomTextStyle.boldMediumTextStyle(),),
-                  SizedBox(height: 7,),
-                  CustomTextField(),
-                  SizedBox(height: 12,),
                   CustomTextWidget("Contact No.", style: CustomTextStyle.boldMediumTextStyle(),),
                   SizedBox(height: 7,),
                   CustomTextField(
                     numberButton: true,
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(height: Get.height*0.1,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CustomTextWidget("Already have an account ?", style: CustomTextStyle.mediumTextStyle(),),
+                      CustomTextWidget("Already have an account ?", style: CustomTextStyle.bigTextStyle(),),
                       CustomInkWell(
                         onTap: (){
                           Get.to(Login());
                         },
-                        child: CustomTextWidget(" Log In", style: CustomTextStyle.boldMediumTextStyle(),),
+                        child: CustomTextWidget(" Log In", style: CustomTextStyle.boldTextStyle(),),
                       )
                     ],
                   ),
